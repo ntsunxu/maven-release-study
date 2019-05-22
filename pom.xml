@@ -4,7 +4,7 @@
 
     <groupId>net.sunxu.study</groupId>
     <artifactId>maven-release-study</artifactId>
-    <version>3.0</version>
+    <version>3.1-SNAPSHOT</version>
 
     <properties>
         <java.version>11</java.version>
@@ -14,7 +14,7 @@
         <url>https://nexus.sunxu.net:4433/repository/maven-releases/</url>
         <connection>scm:git:git@github.com:sunxuia/maven-release-study</connection>
         <developerConnection>scm:git:git@github.com:sunxuia/maven-release-study</developerConnection>
-      <tag>v3.0</tag>
+      <tag>HEAD</tag>
   </scm>
 
     <build>

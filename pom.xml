@@ -12,14 +12,15 @@
     </properties>
 
     <scm>
-        <connection>scm:git:http://git@github.com:sunxuia/maven-release-study.git</connection>
-        <url>git@github.com:sunxuia/maven-release-study</url>
-        <developerConnection>git@github.com:sunxuia/maven-release-study.git</developerConnection>
+        <url>https://nexus.sunxu.net:4433/repository/maven-releases/</url>
+        <connection>scm:git:git@github.com:sunxuia/maven-release-study</connection>
+        <developerConnection>scm:git:git@github.com:sunxuia/maven-release-study</developerConnection>
     </scm>
 
     <build>
         <plugins>
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.0</version>
                 <configuration>

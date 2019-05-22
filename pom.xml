@@ -5,7 +5,7 @@
 
     <groupId>net.sunxu.study</groupId>
     <artifactId>maven-release-study</artifactId>
-    <version>3.1-SNAPSHOT</version>
+    <version>2.0-SNAPSHOT</version>
 
     <properties>
         <java.version>11</java.version>
@@ -13,7 +13,7 @@
 
     <scm>
         <!-- 项目的URL, 通过这个连接查看源代码 -->
-        <url>https://nexus.sunxu.net:4433/repository/maven-releases/</url>
+        <url>https://github.com/sunxuia/maven-release-study</url>
         <!-- scm 的连接方式, 只读 -->
         <!-- 格式可以参阅 http://maven.apache.org/scm/scm-url-format.html -->
         <!-- 支持的scm 可以参阅 http://maven.apache.org/scm/scms-overview.html -->

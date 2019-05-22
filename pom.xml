@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>net.sunxu.study</groupId>
@@ -11,11 +12,18 @@
     </properties>
 
     <scm>
+        <!-- 项目的URL, 通过这个连接查看源代码 -->
         <url>https://nexus.sunxu.net:4433/repository/maven-releases/</url>
-        <connection>scm:git:git@github.com:sunxuia/maven-release-study</connection>
-        <developerConnection>scm:git:git@github.com:sunxuia/maven-release-study</developerConnection>
-      <tag>HEAD</tag>
-  </scm>
+        <!-- scm 的连接方式, 只读 -->
+        <!-- 格式可以参阅 http://maven.apache.org/scm/scm-url-format.html -->
+        <!-- 支持的scm 可以参阅 http://maven.apache.org/scm/scms-overview.html -->
+        <connection>scm:git:git@github.com:sunxuia/maven-release-study.git</connection>
+        <!-- 和connection 类似, 给开发者的连接, 不是只读的 -->
+        <developerConnection>scm:git:git@github.com:sunxuia/maven-release-study.git</developerConnection>
+        <!-- 当前使用的源代码中的 tag, 默认是HEAD -->
+        <!-- (这个在release:prepare 的时候会被更改) -->
+        <tag>HEAD</tag>
+    </scm>
 
     <build>
         <plugins>

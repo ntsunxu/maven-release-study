@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>net.sunxu.study</groupId>
     <artifactId>maven-release-study</artifactId>
-    <version>2.0-SNAPSHOT</version>
+    <version>3.0</version>
 
     <properties>
         <java.version>11</java.version>
@@ -15,7 +14,8 @@
         <url>https://nexus.sunxu.net:4433/repository/maven-releases/</url>
         <connection>scm:git:git@github.com:sunxuia/maven-release-study</connection>
         <developerConnection>scm:git:git@github.com:sunxuia/maven-release-study</developerConnection>
-    </scm>
+      <tag>v3.0</tag>
+  </scm>
 
     <build>
         <plugins>

@@ -5,7 +5,7 @@
 
     <groupId>net.sunxu.study</groupId>
     <artifactId>maven-release-study</artifactId>
-    <version>2.0-SNAPSHOT</version>
+    <version>5.0-SNAPSHOT</version>
 
     <properties>
         <java.version>11</java.version>

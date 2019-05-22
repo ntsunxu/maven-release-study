@@ -46,4 +46,16 @@
             </plugin>
         </plugins>
     </build>
+
+    <distributionManagement>
+        <repository>
+            <id>nexus.sunxu.net</id>
+            <url>https://nexus.sunxu.net:4433/repository/maven-releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus.sunxu.net</id>
+            <url>https://nexus.sunxu.net:4433/repository/maven-snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+
 </project>

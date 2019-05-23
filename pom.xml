@@ -21,7 +21,7 @@
         <developerConnection>scm:git:git@github.com:sunxuia/maven-release-study.git</developerConnection>
         <!-- 当前使用的源代码中的 tag, 默认是HEAD -->
         <!-- (这个在release:prepare 的时候会被更改) -->
-        <tag>HEAD</tag>
+        <tag>prod</tag>
     </scm>
 
     <build>

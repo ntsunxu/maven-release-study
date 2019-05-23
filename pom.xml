@@ -4,7 +4,7 @@
 
     <groupId>net.sunxu.study</groupId>
     <artifactId>maven-release-study</artifactId>
-    <version>5.2-SNAPSHOT</version>
+    <version>5.2</version>
 
     <properties>
         <java.version>11</java.version>
@@ -21,7 +21,7 @@
         <developerConnection>scm:git:git@github.com:sunxuia/maven-release-study.git</developerConnection>
         <!-- 当前使用的源代码中的 tag, 默认是HEAD -->
         <!-- (这个在release:prepare 的时候会被更改) -->
-        <tag>prod</tag>
+        <tag>v5.2</tag>
     </scm>
 
     <build>

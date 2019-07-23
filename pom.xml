@@ -8,6 +8,7 @@
 
     <properties>
         <java.version>11</java.version>
+        <sonarqube.url>https://sonarqube.sunxu.net</sonarqube.url>
     </properties>
 
     <scm>
@@ -23,6 +24,18 @@
         <!-- (这个在release:prepare 的时候会被更改) -->
         <tag>v5.4</tag>
     </scm>
+
+    <profiles>
+        <profile>
+            <id>sonar</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <sonar.host.url>${sonarqube.url}</sonar.host.url>
+            </properties>
+        </profile>
+    </profiles>
 
     <build>
         <plugins>
@@ -43,6 +56,11 @@
                     <tagNameFormat>v@{project.version}</tagNameFormat>
                     <autoVersionSubmodules>true</autoVersionSubmodules>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.sonarsource.scanner.maven</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+                <version>3.6.0.1398</version>
             </plugin>
         </plugins>
     </build>
